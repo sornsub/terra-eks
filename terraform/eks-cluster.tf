@@ -3,8 +3,8 @@ module "eks" {
   version = "~> 20.37"
 
   enable_cluster_creator_admin_permissions = true
-  cluster_name    = local.cluster_name
-  cluster_version = "1.31"
+  cluster_name                             = local.cluster_name
+  cluster_version                          = "1.31"
 
   vpc_id                         = module.vpc.vpc_id
   subnet_ids                     = module.vpc.private_subnets
