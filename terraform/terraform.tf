@@ -6,7 +6,7 @@ terraform {
     # create manage aws ex. vpc ec2
     aws = {
       source  = "hashicorp/aws"
-      version = ">= 6.0"
+      version = "~> 5.95"
     }
     # create random pass
     random = {
